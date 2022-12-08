@@ -1,101 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #4e4b4b;
-}
-h1{
-    color: aliceblue;
-}
-
-header{
-    background-color: #1E1C21;
-    height: 82px;
-    width: auto;
-    padding-top: 20px;
-    padding-left: 20px;    
-}
 .container-grid{
     width: 1200px;
     margin: 0 auto;
 }
 .cabecalho{
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
+}
+header{
+    background-color: #1E1C21;
+    height: 82px;
+    padding-top: 25px;
 }
 .menu{
-    width: 642px;
+    width: 700px;
     display: flex;
     justify-content: space-between;
-    }
+    padding-top: 10px;
+}
 .menu a{
     color: #FFFFFF;
     text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-}
-.banner-principal{
-    background-color: #C31616;
-    height: 607px;
-    width: auto;
-    padding-top: 80px;
-}
-#pilotos {
-    position: absolute;
-    width: 726.86px;
-    height: 549px;
-    left: 60px;
-    top: 111px;
-}
-#liga {
-    position: absolute;
-    width: 494px;
-    height: 128.37px;
-    left: 900px;
-    top: 261.61px;
+    font-family: Roboto;
 }
 .grad{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), black 65%);
-    background-attachment: fixed;
+    height: 600px;
+    background-image: linear-gradient(to right, #C31616, black 65%);
+    background-position: 0px;
 }
-.banner-principal h2{
-    color: #FFFFFF;
-    font-style: normal;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 29.3px; 
-    position: absolute;
-    width: 430px;
-    height: 34.83px;
-    left: 938px;
-    top: 361.61px;
+.banner{
+    background-image: url(../imagens/img-banner-principal.svg);
+    background-repeat: no-repeat;
+    background-position: inherit;
 }
-#bt-inscreva-se{
-    background-color: #C31616!important;
-    border-radius: 5px;
+
+.conteudo-banner h1{
     color: #FFFFFF;
+    font-family:"Titillium Web";
+    font-size: 80px;
+}
+.conteudo-banner p{
+    color: #FFFFFF;
+    font-family: "roboto";
     font-size: 25px;
-    text-align: center;
+}
+.conteudo-banner a{
+    padding: 15px;
+    background-color: #C31616;
+    border-radius: 10px;
+    color: #FFFFFF;
     text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 12px 10px;
-    position: absolute;
-    width: 257px;
-    height: 63px;
-    left: 1025px;
-    top: 431.61px;
+    font-family: "roboto";
+    font-size: 25px;
+    font-weight: 700;
+}
+.conteudo-banner{
+    width: 497;
+    height: 237;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.posicionamento-banner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
 }
 .container-marcas{
     background-color: #000000;
     height: 120px;
-    width: auto;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 25px;
     
 }
 #lista-marcas{
@@ -103,33 +88,87 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+#text-oferta{
+    color: #FFFFFF;
+    font-family:"Roboto";
+    font-size: 27px;
+    font-weight: 900;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    
+}
+.area-produtos{
+    height: 850px;
+    background-color: #1E1C21;
+}
+.posicionamento-cards{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
     width: 1300px;
     margin: 0 auto;
 }
-.container-produtos{
-    position: absolute;
-    width: auto;
-    height: 859px;
-    left: 0px;
-    top: 806px;
-    background: #1E1C21;
-}
-.container-produtos h1{
-    
-}
-#card1{
-    list-style: none;
+.card{
     width: 215px;
-    height: 333px;
-    top: 903px;
-    left: 140px;
-
-    position: absolute;
-    left: 100%;
-    right: 0%;
-    top: 20%;
-    bottom: 20%;
-
-    background: linear-gradient(to top, #000000 0%, rgba(196, 196, 196, 0) 100%);
-    box-shadow: 1px 1px 20px 4px #000000;
+    background-image: linear-gradient(to top, black, rgba(83, 83, 83, 0.577381) 85%);
+}
+.card-title{
+    font-family:"Roboto";
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.card-text{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.btn{
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.card-preco{
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.news{
+    height: 490px;
+    background-position: center;
+    margin: -1px 0px 0px -1px;
+    background-color: #0c2460;
+    background-image: url(../imagens/Rectangle\ 5.jpg);
+    background-repeat: no-repeat;  
+    display: flex;
+    justify-content: space-between; 
+}
+.news h1{
+    color: #FFFFFF;
+    font-family: "roboto";
+    font-size: 35px;
+    font-weight: 900;
+}
+.news p{
+    color: #FFFFFF;
+    font-family: "roboto";
+    font-size: 18px;
+    font-weight: 400; 
+}
+.rodape{
+    height: 250px;
+    background-color: #010101;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rodape a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
