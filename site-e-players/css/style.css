@@ -92,14 +92,12 @@ header{
     margin: 0 auto;
 }
 #text-oferta{
+    text-indent: 175px;
     color: #FFFFFF;
     font-family:"Roboto";
     font-size: 27px;
     font-weight: 900;
-    padding-top: 25px;
-    display: flex;
-    justify-content: center;
-    
+    padding-top: 25px;    
 }
 .area-produtos{
     height: 850px;
@@ -146,19 +144,30 @@ header{
     background-image: url(../imagens/Rectangle\ 5.jpg);
     background-repeat: no-repeat;  
     display: flex;
+    align-content: center;
     justify-content: space-between; 
 }
+
+
 .news h1{
     color: #FFFFFF;
     font-family: "roboto";
     font-size: 35px;
     font-weight: 900;
+    text-align: center;
+    padding-left: 140px;
+    padding-top: 80px;
 }
 .news p{
     color: #FFFFFF;
     font-family: "roboto";
     font-size: 18px;
     font-weight: 400; 
+    width: 40em;
+    word-wrap: break-word;
+    text-align: justify;
+    text-indent: 20px;
+    padding-left: 140px;
 }
 .rodape{
     height: 250px;
@@ -168,7 +177,36 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-.rodape a{
+
+.text-paginas h1{
+    color: #FFFFFF;
+    font-size: 'titillium web';
+    font-size: 24px;
+    font-weight: 700;
+}
+.text-paginas a{
     text-decoration: none;
     color: #FFFFFF;
+    font-size: 'titillium web';
+    font-size: 14px;
+    font-weight: 600;
+}
+#text-newsletter{
+    font-family: 'titillium web';
+    font-size: 16px;
+    font-weight: 600;
+}
+.redes{
+    list-style: none;
+    font-family: 'titillium web';
+    font-size: 23px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid{
+        width: 1000px;
+    }
 }
