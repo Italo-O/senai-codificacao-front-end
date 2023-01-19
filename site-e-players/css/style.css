@@ -27,56 +27,14 @@ header{
     justify-content: space-between;
     padding-top: 10px;
 }
+
 .menu a{
     color: #FFFFFF;
     text-decoration: none;
     font-family: Roboto;
 }
-.grad{
-    height: 600px;
-    background-image: linear-gradient(to right, #C31616, black 65%);
-    background-position: 0px;
-}
-.banner{
-    background-image: url(../imagens/img-banner-principal.svg);
-    background-repeat: no-repeat;
-    background-position: inherit;
-}
 
-.conteudo-banner h1{
-    color: #FFFFFF;
-    font-family:"Titillium Web";
-    font-size: 80px;
-}
-.conteudo-banner p{
-    color: #FFFFFF;
-    font-family: "roboto";
-    font-size: 25px;
-}
-.conteudo-banner a{
-    padding: 15px;
-    background-color: #C31616;
-    border-radius: 10px;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: "roboto";
-    font-size: 25px;
-    font-weight: 700;
-}
-.conteudo-banner{
-    width: 497;
-    height: 237;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-.posicionamento-banner{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-}
+
 .container-marcas{
     background-color: #000000;
     height: 120px;
@@ -92,12 +50,13 @@ header{
     margin: 0 auto;
 }
 #text-oferta{
-    text-indent: 175px;
+    width: 1200px;
+    margin: 0 auto;
     color: #FFFFFF;
     font-family:"Roboto";
     font-size: 27px;
     font-weight: 900;
-    padding-top: 25px;    
+    padding-top: 20px;    
 }
 .area-produtos{
     height: 850px;
@@ -136,13 +95,16 @@ header{
     font-weight: 500;
     color: #FFFFFF;
 }
-.news{
-    height: 490px;
-    background-position: center;
-    margin: -1px 0px 0px -1px;
+.bg-news{
     background-color: #0c2460;
     background-image: url(../imagens/Rectangle\ 5.jpg);
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+.news{
+    height: 490px;
+    width: 1300px;
+    margin: 0 auto;
     display: flex;
     align-content: center;
     justify-content: space-between; 
@@ -154,24 +116,29 @@ header{
     font-family: "roboto";
     font-size: 35px;
     font-weight: 900;
+    padding-left: 40px;
     text-align: center;
-    padding-left: 140px;
     padding-top: 80px;
 }
 .news p{
     color: #FFFFFF;
     font-family: "roboto";
     font-size: 18px;
-    font-weight: 400; 
-    width: 40em;
+    font-weight: 400;
+    padding-left: 40px; 
+    width: 30em;
     word-wrap: break-word;
     text-align: justify;
     text-indent: 20px;
-    padding-left: 140px;
+
+}
+.bg-rodape{
+    background-color: #010101;
 }
 .rodape{
     height: 250px;
-    background-color: #010101;
+    width: 1200px;
+    margin: 0 auto;
     color: #FFFFFF;
     display: flex;
     justify-content: space-around;
@@ -195,6 +162,24 @@ header{
     font-family: 'titillium web';
     font-size: 16px;
     font-weight: 600;
+    text-align: center;
+}
+.newsletter{
+    margin: 20px;
+    align-items: center;
+}
+.newsletter input{
+    width: 195px;
+    height: 38px;
+    margin-left: 20px;
+}
+.newsletter button{
+    width: 156px;
+    height: 42px;
+    background-color: #0c2460;
+    margin-left: -5px;
+    font-family: 'titillium web';
+    color: #FFFFFF;
 }
 .redes{
     list-style: none;
