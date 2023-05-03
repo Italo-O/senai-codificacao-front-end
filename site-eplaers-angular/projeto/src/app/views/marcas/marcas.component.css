@@ -1,0 +1,16 @@
+.container-marcas{
+    background-color: #000000;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+#lista-marcas{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.space{
+    padding-right: 15px;
+}
